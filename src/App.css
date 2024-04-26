@@ -24,9 +24,38 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text-link {
+  color: black;
+  text-decoration: none;
 }
+
+.wrapper-products {
+  background-color: gray;
+  position: absolute;
+}
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+.titan-one-regular {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.black-han sans-regular {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lalezar-regular {
+  font-family: "Lalezar", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 @keyframes App-logo-spin {
   from {
