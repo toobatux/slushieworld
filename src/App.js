@@ -6,7 +6,6 @@ import { AboutPage } from "./pages/AboutPage.js";
 import { CartPage } from "./pages/CartPage.js";
 
 //import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
 import LoginPage from "./pages/LoginPage.js";
 //Amplify.configure(awsconfig);
 
