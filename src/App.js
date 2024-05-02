@@ -5,6 +5,11 @@ import { ProductsPage } from "./pages/ProductsPage.js";
 import { AboutPage } from "./pages/AboutPage.js";
 import { CartPage } from "./pages/CartPage.js";
 
+//import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+import LoginPage from "./pages/LoginPage.js";
+//Amplify.configure(awsconfig);
+
 function App() {
   return (
     <>
@@ -77,13 +82,16 @@ function App() {
                 </Link>
               </li>
               <li class="nav-item lalezar-regular">
-                <button
+                {/* <button
                   type="button"
                   class="btn btn-secondary"
                   style={{ fontSize: 25 }}
-                >
-                  Login
-                </button>
+                > */}
+                  <Link
+                  to="/login"
+                  className="nav-link lalezar-regular me-4"
+                  style={{ fontSize: 25 }}
+                >Login</Link>
               </li>
             </ul>
             {/* <ul class="navbar-nav titan-one-regular">
@@ -100,6 +108,7 @@ function App() {
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/about/" element={<AboutPage />} />
         <Route path="/cart/" element={<CartPage />} />
+        <Route path="/login/" element={<LoginPage/>} />
       </Routes>
 
       <footer class="footer mt-auto py-3 bg-light">
