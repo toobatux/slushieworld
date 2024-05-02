@@ -1,7 +1,7 @@
 import { Authenticator, withAuthenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-function LoginPage() {
+export const LoginPage = () => {
     return (
         <>
         <Authenticator>
@@ -16,13 +16,13 @@ function LoginPage() {
                   padding: '5px 10px', 
                   marginTop: '20px'
                 }}
-              >
+            >
                 Sign Out
               </button>
             </header>
           </main>
         )}
-      </Authenticator>
+        </Authenticator>
         </>
     )
 }

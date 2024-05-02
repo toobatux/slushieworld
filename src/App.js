@@ -5,9 +5,10 @@ import { ProductsPage } from "./pages/ProductsPage.js";
 import { AboutPage } from "./pages/AboutPage.js";
 import { CartPage } from "./pages/CartPage.js";
 
-//import Amplify from 'aws-amplify';
+import { Amplify } from 'aws-amplify';
 import LoginPage from "./pages/LoginPage.js";
-//Amplify.configure(awsconfig);
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 
 function App() {
   return (
